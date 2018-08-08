@@ -1,0 +1,13 @@
+.navbar {
+    font-family: 'Times Sans Serif', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar-item {
+    margin: 5px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
