@@ -1,0 +1,27 @@
+h1 {
+	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
+}
+
+.photo {
+	width: 25%;
+}
+
+.padding-0 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.pt-150 {
+	padding-top: 150px;
+}
+
+.thumbnail {
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
+}
+
+.modal {
+	margin: auto;
+	z-index: 9999;
+}

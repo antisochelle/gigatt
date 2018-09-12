@@ -1,0 +1,37 @@
+.footer {
+	background-color: #101010;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+}
+
+.title {
+	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.body {
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 0.85rem;
+	color: #fff;
+}
+
+.padding-0 {
+	padding-left: 0;
+	padding-right: 0; 
+}
+
+.links {
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.links a {
+	color: white;
+	padding: 5px;
+}
+
+.links a:hover {
+	color: #bababa;
+}

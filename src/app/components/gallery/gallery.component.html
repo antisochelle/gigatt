@@ -1,0 +1,145 @@
+<!-- <div class="container mb-5 pt-150">
+	<h1 class="text-lg-left">Pools & Cottages</h1>
+	<div class="row" *ngFor="let arr of poolPhotos">
+		<div class="photo m-1 col padding-0 "  *ngFor="let photo of arr">
+			<img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+		</div>
+	</div>
+</div> -->
+
+<!-- <div class="container mb-5">
+	<h1 class="text-lg-left">Rooms</h1>
+	<div class="row" *ngFor="let arr of roomPhotos">
+		<div class="photo m-1 col padding-0 "  *ngFor="let photo of arr">
+			<img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+		</div>
+	</div>
+</div> -->
+
+<!-- <div class="container mb-5">
+	<h1 class="text-lg-left">Event Areas</h1>
+	<div class="row" *ngFor="let arr of eventPhotos">
+		<div class="photo m-1 col padding-0"  *ngFor="let photo of arr">
+			<img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+		</div>
+	</div>
+</div>
+ -->
+
+ <!-- <div class="container mb-5">
+	<h1 class="text-lg-left">Leisure Park & Mini Zoo</h1>
+	<div class="row" *ngFor="let arr of leisurePhotos">
+		<div class="photo m-1 col padding-0"  *ngFor="let photo of arr">
+			<img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+		</div>
+	</div>
+</div> -->
+
+<!-- <div class="container mb-5">
+	<h1 class="text-lg-left">Activity Areas</h1>
+	<div class="row" *ngFor="let arr of activityPhotos">
+		<div class="photo m-1 col padding-0"  *ngFor="let photo of arr">
+			<img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+		</div>
+	</div>
+</div> -->
+
+<div class="container mb-5 pt-150">
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <h1 class="text-lg-left">Pools & Cottages</h1>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row" *ngFor="let arr of poolPhotos">
+			<div class="photo m-1 col padding-0 "  *ngFor="let photo of arr">
+				<img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          <h1 class="text-lg-left">Rooms</h1>
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row" *ngFor="let arr of roomPhotos">
+			<div class="photo m-1 col padding-0 "  *ngFor="let photo of arr">
+				<img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          <h1 class="text-lg-left">Event Areas</h1>
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row" *ngFor="let arr of eventPhotos">
+			<div class="photo m-1 col padding-0"  *ngFor="let photo of arr">
+			  <img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+          <h1 class="text-lg-left">Leisure Park & Mini Zoo</h1>
+        </a>
+      </div>
+      <div id="collapseFour" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row" *ngFor="let arr of leisurePhotos">
+			<div class="photo m-1 col padding-0"  *ngFor="let photo of arr">
+			  <img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+          <h1 class="text-lg-left">Activity Areas</h1>
+        </a>
+      </div>
+      <div id="collapseFive" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row" *ngFor="let arr of activityPhotos">
+			<div class="photo m-1 col padding-0"  *ngFor="let photo of arr">
+			  <img class="img-fluid thumbnail" src="{{photo}}" data-toggle="modal" data-target="#myModal" (click)="showImage(photo)">
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="{{modalImg}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

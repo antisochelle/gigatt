@@ -1,0 +1,43 @@
+.fullwidth {
+	width: 100%;
+}
+
+.pt {
+	padding-top: 80px;
+}
+
+.padding-0 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+h1 {
+	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
+}
+
+.text-blue {
+	color: #002157;
+}
+
+iframe {
+	float: left;
+}
+
+.hl {
+    border-top: 6px solid;
+    width: 100px;
+    margin: 30px auto;
+}
+
+p {
+	font: 'Open Sans', sans-serif;
+}
+
+img {
+	border-radius: 0;
+}
+
+.modal {
+	margin: auto;
+	z-index: 9999;
+}

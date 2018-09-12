@@ -1,0 +1,147 @@
+.fullwidth {
+	width: 100%;
+}
+
+.carousel-inner {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+a.carousel-control-next {
+ background-image: linear-gradient(to right, rgba(250, 0, 0, 0) 0px, rgba(0, 0, 0, 1) 100%);
+}
+a.carousel-control-prev{
+ background-image: linear-gradient(to left, rgba(250, 0, 0, 0) 0px, rgba(0, 0, 0, 1) 100%);
+}
+
+.carousel-item::after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.6);
+}
+
+.section {
+	background-color: white;
+	height: 25%;
+	padding-top: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-bottom: 50px;
+}
+
+p.section-title span {
+	display: block;
+	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
+	font-size: 3rem;
+	line-height: 1;
+}
+
+p.section-body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+}
+
+p.section-body span {
+	display: block;
+	line-height: 1.5;
+}
+
+.space-20 {
+	margin: 20px;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.text-blue {
+	color: #002157;
+}
+
+.carousel-text {
+    color: #fff;
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    bottom: 30%;
+}
+
+.carousel-text-title span {
+	display: block;
+	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
+	font-size: 5rem;
+	line-height: 1;
+}
+
+.carousel-text-body {
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+}
+
+
+.img-text {
+	margin: auto;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 20%;
+	left: 0;
+	right: 0;
+	color: #fff;
+	z-index:2;
+	text-align: center;
+}
+
+.img-text-title span {
+	display: block;
+	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
+	font-size: 4rem;
+	line-height: 1;
+}
+
+.img-text-body span {
+	display: block;
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 1rem;
+	font-style: italic;
+	line-height: 1.2;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.mask::after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0,0,0,0.7);
+}
+
+.gradient-bottom::after {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0px, rgba(0, 0, 0, 0) 100%);
+}
+
+.gradient-top::after {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0px, rgba(0, 0, 0, 0) 100%);
+}
+
+.hl {
+    border-top: 6px solid white;
+    width: 300px;
+    margin: 30px auto;
+}
