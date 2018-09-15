@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image-gallery";
 
 @Component({
   selector: 'app-gallery',
@@ -20,15 +21,17 @@ export class GalleryComponent implements OnInit {
   //   'Activity Areas'  
   // ]
 
-  modalImg: string;
   displayModal: boolean;
+  imgIndex: number;
+  modalImg: string;
 
   constructor() { }
 
   ngOnInit() {
     // generate photos for each list
-    this.generatePhotos(this.poolPhotos, 'pool', 24);
+    this.generatePhotos(this.poolPhotos, 'pool', 6);
     this.generatePhotos(this.roomPhotos, 'room', 26)
+    console.log(this.poolPhotos);
   }
 
   generatePhotos(photoList, folder, total) {
@@ -42,12 +45,14 @@ export class GalleryComponent implements OnInit {
     }
   }
 
-  showImage(image) {
-    this.modalImg = image;
+  showImage(photo, index) {
+    this.modalImg = photo;
+    this.imgIndex = index;
+    console.log(this.modalImg);
+    console.log(this.imgIndex);
   }
 
   closeImage() {
     this.displayModal = false;
   }
-
 }

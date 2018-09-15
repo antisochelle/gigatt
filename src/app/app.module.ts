@@ -1,6 +1,6 @@
-import 'hammerjs';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core'
+import { NgxImageGalleryModule } from 'ngx-image-gallery';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -26,6 +26,7 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     BrowserModule,
+    NgxImageGalleryModule,
     AppRoutingModule
   ],
   providers: [],

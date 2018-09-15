@@ -12,10 +12,12 @@
 }
 
 .body {
-	font-family: 'Century Gothic', sans-serif;
+	/*font-family: 'Century Gothic', sans-serif;*/
 	font-size: 0.85rem;
 	color: #fff;
 }
+
+
 
 .padding-0 {
 	padding-left: 0;

@@ -1,0 +1,20 @@
+.pt {
+	padding-top: 150px;
+}
+
+h1 {
+	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
+}
+
+.text-blue {
+	color: #002157;
+}
+
+body{
+    background-color:#f2f2f2;
+}
+.table{
+    background-color:#fff;
+    box-shadow:0px 2px 2px #aaa;
+    margin-top:50px;
+}

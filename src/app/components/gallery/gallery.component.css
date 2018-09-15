@@ -25,3 +25,7 @@ h1 {
 	margin: auto;
 	z-index: 9999;
 }
+
+.carousel-inner {
+	width: 100%;
+}
