@@ -14,13 +14,6 @@ export class GalleryComponent implements OnInit {
   leisurePhotos = [];
   activityPhotos = [];
 
-  // titles = ['Pools & Cottages',
-  //   'Rooms',
-  //   'Event Areas',
-  //   'Leisure Park & Mini Zoo',
-  //   'Activity Areas'  
-  // ]
-
   displayModal: boolean;
   imgIndex: number;
   modalImg: string;
@@ -29,9 +22,16 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit() {
     // generate photos for each list
-    this.generatePhotos(this.poolPhotos, 'pool', 6);
-    this.generatePhotos(this.roomPhotos, 'room', 26)
-    console.log(this.poolPhotos);
+    // this.generatePhotos(this.poolPhotos, 'pool', 10);
+    // this.generatePhotos(this.roomPhotos, 'room', 26)
+    // console.log(this.poolPhotos);
+
+    for (var i = 1; i <= 10; i++) {
+      this.poolPhotos.push('assets/pool/pool(' + i + ').jpg');
+    }
+    for (var i = 1; i <= 13; i++) {
+      this.eventPhotos.push('assets/event/event(' + i + ').jpg');
+    }
   }
 
   generatePhotos(photoList, folder, total) {
@@ -45,11 +45,11 @@ export class GalleryComponent implements OnInit {
     }
   }
 
-  showImage(photo, index) {
+  showImage(photo) {
     this.modalImg = photo;
-    this.imgIndex = index;
-    console.log(this.modalImg);
-    console.log(this.imgIndex);
+    // this.imgIndex = index;
+    // console.log(this.modalImg);
+    // console.log(this.imgIndex);
   }
 
   closeImage() {
