@@ -8,51 +8,45 @@ import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image
 })
 export class GalleryComponent implements OnInit {
 
-  poolPhotos = [];
-  roomPhotos = [];
-  eventPhotos = [];
-  leisurePhotos = [];
-  activityPhotos = [];
+  photos = [[],[],[],[]];
+  allPhotos = [];
 
   displayModal: boolean;
-  imgIndex: number;
   modalImg: string;
 
   constructor() { }
 
   ngOnInit() {
-    // generate photos for each list
-    // this.generatePhotos(this.poolPhotos, 'pool', 10);
-    // this.generatePhotos(this.roomPhotos, 'room', 26)
-    // console.log(this.poolPhotos);
-
-    for (var i = 1; i <= 10; i++) {
-      this.poolPhotos.push('assets/pool/pool(' + i + ').jpg');
+    for (var file = 1; file <= 84; file++) {
+      var fileName = 'assets/gallery/gallery(' + file + ').jpg';
+      if (file % 4 === 1) { this.photos[0].push(fileName); }
+      else if (file % 4 === 2) { this.photos[1].push(fileName); }
+      else if (file % 4 === 3) { this.photos[2].push(fileName); }
+      else { this.photos[3].push(fileName); }
+      this.allPhotos.push(fileName);
     }
-    for (var i = 1; i <= 13; i++) {
-      this.eventPhotos.push('assets/event/event(' + i + ').jpg');
-    }
+    // console.log(this.photos);
+    // console.log(this.allPhotos);
   }
 
-  generatePhotos(photoList, folder, total) {
-    var arr: string[] = [];
-    for (var i = 1; i <= total; i++) {
-      arr.push('assets/' + folder + '/' + folder + '(' + String(i) + ').JPG');
-      if (i % 6 === 0) {
-        photoList.push(arr);
-        arr = [];
-      }
+  active(photo) {
+    if (photo === this.modalImg) {
+      console.log(photo);
+      return true;
     }
+    return false;
   }
 
   showImage(photo) {
     this.modalImg = photo;
-    // this.imgIndex = index;
     // console.log(this.modalImg);
-    // console.log(this.imgIndex);
   }
 
   closeImage() {
     this.displayModal = false;
+  }
+
+  printIndex(i, j) {
+    console.log(4 * j + i);
   }
 }

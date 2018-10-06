@@ -13,36 +13,13 @@ h1 {
 
 .pt-150 {
 	padding-top: 150px;
+    padding-bottom: 30px;
 }
 
 .modal {
 	margin: 0 auto;
 	z-index: 9999;
 }
-
-/*.thumbnail {
-  object-fit: cover;
-  width: 200px;
-  height: 150px;
-}
-
-.carousel-inner {
-	width: 100%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial;
-}
-
-.header {
-    text-align: center;
-    padding: 32px;
-}*/
 
 * {
     box-sizing: border-box;

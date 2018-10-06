@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialectComponent } from './dialect.component';
+import { KapampanganComponent } from './kapampangan.component';
 
 describe('DialectComponent', () => {
-  let component: DialectComponent;
-  let fixture: ComponentFixture<DialectComponent>;
+  let component: KapampanganComponent;
+  let fixture: ComponentFixture<KapampanganComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DialectComponent ]
+      declarations: [ KapampanganComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DialectComponent);
+    fixture = TestBed.createComponent(KapampanganComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
