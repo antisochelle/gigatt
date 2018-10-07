@@ -15,15 +15,15 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit() {
-  	this.video = document.getElementById('avp');
+    this.video = document.getElementById('avp');
   }
 
   showControls() {
-  	this.video.controls = true;
+    this.video.controls = true;
   }
 
   hideControls() {
-  	this.video.controls = false;
+    this.video.controls = false;
   }
 
   showImage(image) {

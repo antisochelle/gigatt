@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core'
-import { NgxImageGalleryModule } from 'ngx-image-gallery';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -26,7 +25,6 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    NgxImageGalleryModule,
     AppRoutingModule
   ],
   providers: [],

@@ -8,24 +8,24 @@ import { KapampanganComponent } from '../components/kapampangan/kapampangan.comp
 import { ContactComponent } from '../components/contact/contact.component';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/home', pathMatch: 'full' },
-	{ path: 'home', component: HomeComponent},
-	{ path: 'about', component: AboutComponent},
-	{ path: 'rates', component: RatesComponent},
-	{ path: 'gallery', component: GalleryComponent},
-	{ path: 'kapampangan', component: KapampanganComponent},
-	{ path: 'contact', component: ContactComponent}
-	// { path: "**", component: PageNotFoundComponent}
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent},
+    { path: 'about', component: AboutComponent},
+    { path: 'rates', component: RatesComponent},
+    { path: 'gallery', component: GalleryComponent},
+    { path: 'kapampangan', component: KapampanganComponent},
+    { path: 'contact', component: ContactComponent}
+    // { path: "**", component: PageNotFoundComponent}
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
-	exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }
 export const routerComponents = [HomeComponent,
-								 AboutComponent,
-								 RatesComponent,
-								 GalleryComponent,
-								 KapampanganComponent,
-								 ContactComponent]
+                                 AboutComponent,
+                                 RatesComponent,
+                                 GalleryComponent,
+                                 KapampanganComponent,
+                                 ContactComponent];

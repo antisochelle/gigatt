@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image-gallery";
 
 @Component({
   selector: 'app-gallery',
@@ -8,7 +7,7 @@ import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image
 })
 export class GalleryComponent implements OnInit {
 
-  photos = [[],[],[],[]];
+  photos = [[], [], [], []];
   allPhotos = [];
 
   displayModal: boolean;
@@ -17,12 +16,17 @@ export class GalleryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    for (var file = 1; file <= 84; file++) {
-      var fileName = 'assets/gallery/gallery(' + file + ').jpg';
-      if (file % 4 === 1) { this.photos[0].push(fileName); }
-      else if (file % 4 === 2) { this.photos[1].push(fileName); }
-      else if (file % 4 === 3) { this.photos[2].push(fileName); }
-      else { this.photos[3].push(fileName); }
+    for (let file = 1; file <= 84; file++) {
+      const fileName = 'assets/gallery/gallery(' + file + ').jpg';
+      if (file % 4 === 1) {
+        this.photos[0].push(fileName);
+      } else if (file % 4 === 2) {
+       this.photos[1].push(fileName);
+      } else if (file % 4 === 3) {
+        this.photos[2].push(fileName);
+      } else {
+        this.photos[3].push(fileName);
+      }
       this.allPhotos.push(fileName);
     }
     // console.log(this.photos);
