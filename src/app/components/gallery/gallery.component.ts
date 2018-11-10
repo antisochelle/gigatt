@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component,  OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
@@ -10,7 +10,7 @@ export class GalleryComponent implements OnInit {
   photos = [[], [], [], []];
   allPhotos = [];
 
-  displayModal: boolean;
+  modal;
   modalImg: string;
 
   constructor() { }
@@ -31,9 +31,13 @@ export class GalleryComponent implements OnInit {
     }
     // console.log(this.photos);
     // console.log(this.allPhotos);
+
+    this.modal = document.getElementById('myModal');
   }
 
   active(photo) {
+    // console.log(this.modal);
+
     if (photo === this.modalImg) {
       console.log(photo);
       return true;
@@ -41,16 +45,17 @@ export class GalleryComponent implements OnInit {
     return false;
   }
 
-  showImage(photo) {
-    this.modalImg = photo;
-    // console.log(this.modalImg);
-  }
-
-  closeImage() {
-    this.displayModal = false;
+  closeModal() {
+    const active = document.getElementsByClassName('active')[0];
+    active.classList.remove('active');
   }
 
   printIndex(i, j) {
     console.log(4 * j + i);
+  }
+
+  showImage(photo) {
+    this.modalImg = photo;
+    this.modal.click(); // Open modal
   }
 }
