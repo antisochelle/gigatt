@@ -39,7 +39,7 @@ export class GalleryComponent implements OnInit {
     // console.log(this.modal);
 
     if (photo === this.modalImg) {
-      console.log(photo);
+      // console.log('Active', photo);
       return true;
     }
     return false;
@@ -48,6 +48,7 @@ export class GalleryComponent implements OnInit {
   closeModal() {
     const active = document.getElementsByClassName('active')[0];
     active.classList.remove('active');
+    this.modalImg = '';
   }
 
   printIndex(i, j) {
