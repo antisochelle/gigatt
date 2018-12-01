@@ -6,11 +6,6 @@
 	padding-top: 80px;
 }
 
-.padding-0 {
-	padding-right: 0;
-	padding-left: 0;
-}
-
 h1 {
 	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
 }
@@ -40,4 +35,8 @@ img {
 .modal {
 	margin: auto;
 	z-index: 9999;
+}
+
+.modal-body {
+    padding: 5px;
 }

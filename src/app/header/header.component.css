@@ -16,3 +16,8 @@
 .container {
     margin: 0 auto;
 }
+
+img {
+    image-rendering: -moz-crisp-edges;
+    width: 200px;
+}
