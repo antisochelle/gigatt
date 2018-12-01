@@ -8,14 +8,14 @@ import { KapampanganComponent } from '../components/kapampangan/kapampangan.comp
 import { ContactComponent } from '../components/contact/contact.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent},
     { path: 'about', component: AboutComponent},
     { path: 'rates', component: RatesComponent},
     { path: 'gallery', component: GalleryComponent},
     { path: 'kapampangan', component: KapampanganComponent},
-    { path: 'contact', component: ContactComponent}
-    // { path: "**", component: PageNotFoundComponent}
+    { path: 'contact', component: ContactComponent},
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: "**", redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -23,9 +23,9 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routerComponents = [HomeComponent,
+export const routerComponents = [ HomeComponent,
                                  AboutComponent,
                                  RatesComponent,
                                  GalleryComponent,
                                  KapampanganComponent,
-                                 ContactComponent];
+                                 ContactComponent ];

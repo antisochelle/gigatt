@@ -10,24 +10,22 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { RatesComponent } from './components/rates/rates.component';
 import { KapampanganComponent } from './components/kapampangan/kapampangan.component';
 import { ContactComponent } from './components/contact/contact.component';
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    routerComponents,
     FooterComponent,
     AboutComponent,
     GalleryComponent,
     RatesComponent,
     KapampanganComponent,
-    ContactComponent
+    ContactComponent,
+    routerComponents
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
