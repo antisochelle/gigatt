@@ -16,7 +16,8 @@ export class GalleryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    for (let file = 1; file <= 84; file++) {
+    const numberOfPhotos = 109;
+    for (let file = 1; file <= numberOfPhotos; file++) {
       const fileName = 'assets/gallery/gallery(' + file + ').jpg';
       if (file % 4 === 1) {
         this.photos[0].push(fileName);

@@ -21,6 +21,10 @@ h1 {
 	z-index: 9999;
 }
 
+.modal img {
+    width: 100%;
+}
+
 .modal-body {
     padding: 5px;
 }
