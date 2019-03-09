@@ -7,6 +7,14 @@ h1 {
 	font-family: 'Times Sans Serif', 'Belleza', sans-serif;
 }
 
+.card-title {
+    color: #0c1c4f;
+}
+
+.text-muted {
+    color: #ee523b!important;
+}
+
 .text-blue {
 	color: #002157;
 }
